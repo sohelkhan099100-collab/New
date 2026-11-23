@@ -27,7 +27,7 @@ jobs:
         run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
 
       - name: Unzip project
-        run: unzip -q jarvis-project.zip -d project
+        run: unzip -q ./*.zip -d project
 
       - name: Build APK
         working-directory: project
